@@ -1,0 +1,26 @@
+# Running settings
+exp_script: "src.exp1"
+
+# Define db root
+#db_root:  "/media/alergn/hdd/datasets/audio/speech/TCD-VOIP/"
+#mos_lqs_csv: "subjective_scores_cond.csv"
+csv_speech: data/img_mos_metrics.csv
+
+# METRICS
+# Speech: 1) PESQ, 2) NISQA, 3) VISQOL
+# Image: 1) ssim
+metric: 'ssim'
+
+# DATABASES
+# Speech: 1) P23_EXP1, 2) P23_EXP3, 3) TCD-VOIP
+# IMAGE: JPEGCoreExperiment
+db: 'JPEGCoreExperiment' 
+per_cond: False 
+plot_cci: True
+
+# Define output directory
+out_dir: ./experiments/exp1_plot/
+
+# *** PARAMETER SETTINGS ***
+S: 1
+metric_names: ['pcc', 'srcc', 'ktau', 'cci']

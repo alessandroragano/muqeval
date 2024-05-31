@@ -1,0 +1,27 @@
+# Running settings
+exp_script: "src.compare_models"
+
+# Define db root
+csv_speech: data/speech_mos_metrics.csv
+
+# METRICS
+# Speech: 1) PESQ, 2) NISQA, 3) VISQOL
+# Image: 1) SSIM, 2) ... TBD
+metric: 
+  - 'VISQOL'
+  - 'PESQ'
+
+# DATABASES
+# Speech: 1) P23_EXP1, 2) P23_EXP3, 3) TCD-VOIP
+# IMAGE: TBD
+db: 
+  - 'TCD-VOIP'
+  - 'P23_EXP1'
+  - 'P23_EXP3'
+
+# Define output directory
+stats_root: ./experiments/
+exp: exp2
+
+# *** PARAMETER SETTINGS ***
+metric_names: ['pcc', 'srcc', 'ktau', 'cci']

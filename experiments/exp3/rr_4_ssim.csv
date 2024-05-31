@@ -1,0 +1,6 @@
+index,Bad,Excellent,population
+pcc,0.647,0.275,0.864
+srcc,0.595,0.357,0.843
+ktau,0.427,0.246,0.658
+cci,0.847,0.74,0.924
+wcci,,,0.924

@@ -1,0 +1,22 @@
+# Running settings
+exp_script: "src.create_deviation_plot"
+
+# Define db root
+csv_speech: data/img_mos_metrics.csv
+
+# METRICS
+# Speech: 1) PESQ, 2) NISQA, 3) VISQOL
+# Image: 1) SSIM, 2) ... TBD
+metric: 'ssim'
+
+# DATABASES
+# Speech: 1) P23_EXP1, 2) P23_EXP3, 3) TCD-VOIP
+# IMAGE: TBD
+db: 'JPEGCoreExperiment'
+
+# Define output directory
+stats_root: ./experiments/
+exp: exp3
+
+# *** PARAMETER SETTINGS ***
+metric_names: ['pcc', 'srcc', 'ktau', 'cci']

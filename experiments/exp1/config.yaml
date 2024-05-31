@@ -1,0 +1,11 @@
+S: 1000
+csv_speech: data/img_mos_metrics.csv
+db: JPEGCoreExperiment
+exp_script: src.exp1
+metric: ssim
+metric_names:
+- pcc
+- srcc
+- ktau
+- cci
+out_dir: ./experiments/exp1/
